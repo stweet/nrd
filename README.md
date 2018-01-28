@@ -14,7 +14,7 @@
 Клиентскую часть - по желанию(например SPA с Vue или Angular или на чистом JS).
 
 ; --------------------------------------------
-![alt text](https://github.com/stweet/nrd/edit/master/public/imgs/preview.png)
+![Image alt](https://github.com/stweet/nrd/raw/master/public/imgs/preview.png)
 
 Для работы с проектом:
 1.  Создать базу данных(MySql) для приложения.

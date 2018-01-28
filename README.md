@@ -15,6 +15,8 @@
 
 ; --------------------------------------------
 ![Image alt](https://github.com/stweet/nrd/raw/master/public/imgs/preview.png)
+![Image alt](https://github.com/stweet/nrd/raw/master/public/imgs/preview-edit.png)
+
 
 Для работы с проектом:
 1.  Создать базу данных(MySql) для приложения.

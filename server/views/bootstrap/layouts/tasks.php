@@ -9,7 +9,7 @@
         </button>
         <div class="dropdown pull-right" id="filter-state">
             <button class="btn btn-default dropdown-toggle" type="button" id="btn-filter-state" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                <span style="margin-right: 10px;" id="label">Все задачи</span><span class="caret"></span>
+                <span style="margin-right: 10px;" id="label">Фильтр</span><span class="caret"></span>
             </button>
             <ul id="select" class="dropdown-menu" aria-labelledby="btn-filter-state">
                 <li><a href="javascript:TasksFilter.setState('*');">Все задачи</a></li>

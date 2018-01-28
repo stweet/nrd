@@ -1,0 +1,37 @@
+body { background-color: #fcfcfc; }
+
+.system-messages-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.system-messages-container .system-message {
+    background-color: rgba(0, 0, 0, .9);
+    box-shadow: 0px 1px 2px 0px #999;
+    border: 1px #cfcfcf solid;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 25px;
+    color: white;
+    width: 320px;
+}
+
+.system-messages-container .system-message:last-child { margin: 0px; }
+.system-messages-container .system-message.danger { color: #ff6666; }
+.system-messages-container .system-message.info { color: #66ccff; }
+.system-messages-container .system-message.warning { color: #ffcc66; }
+.system-messages-container .system-message.success { color: #99ff66; }
+
+.panel-heading .glyphicon {
+    cursor: pointer;
+}
+
+/* .content-block {} */
+.content-block .tasks-tools {
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 3px;
+}

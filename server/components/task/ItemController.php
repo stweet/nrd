@@ -32,7 +32,7 @@ namespace components\task {
             else echo TaskComponent::packSysemError("Item not found!");
         }
         
-        /** Изменение состояния задачи */
+        /** Изменение состаяния задачи */
         public function change() {
             $id = \Input::post("id", 0);
             $state = \Input::post("state", "0");

@@ -8,7 +8,7 @@ namespace database\models\pdo\base {
 
         public function apply() {
             
-            $this->query("
+            $this->execute("
                 create table if not exists tasks(
                     id int(11) unsigned auto_increment primary key,
                     title varchar(255) not null,
@@ -16,7 +16,7 @@ namespace database\models\pdo\base {
                     state boolean not null default 0,
                     createdAt timestamp);");
             
-            $this->query("
+            $this->execute("
                 insert into tasks
                     (title, context, state) 
                 values 
@@ -25,9 +25,15 @@ namespace database\models\pdo\base {
                     ('last task', 'Last task context.', false);");
         }
 
-        protected function query(string $request) {
+        /**
+         * Undocumented function
+         *
+         * @param string $request
+         * @return void
+         */
+        protected function execute(string $request) {
             
-            if ($result = parent::query($request)) {
+            if ($result = parent::execute($request)) {
                 \__pre("COMPLETE REQUEST $request");
             } else {
                 \__pre("ERROR REQUEST $request");

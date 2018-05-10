@@ -10,11 +10,11 @@ namespace components\install {
     class DBaseController {
 
         public function install() {
-            ModelFactory::load("base\\Install")->apply();
+            ModelFactory::loadModel("base\\Install")->apply();
         }
 
         public function uninstall() {
-            ModelFactory::load("base\\Uninstall")->apply();
+            ModelFactory::loadModel("base\\Uninstall")->apply();
         }
     }
 }

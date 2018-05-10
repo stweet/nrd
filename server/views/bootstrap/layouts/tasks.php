@@ -1,7 +1,7 @@
 <?php include_once "template/header.php"; ?>
 
 <div class="content-block">
-    <h1 class="page-header">Task manager!</h1>
+    <h1 class="page-header">Задачник.</h1>
 
     <div class="tasks-tools">
         <button type="button" class="btn btn-success" onclick="TasksModal.append();">
@@ -31,7 +31,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title">Task editor</h4>
+                    <h4 class="modal-title">Редактор задач</h4>
                 </div>
 
                 <div class="modal-body">
@@ -39,14 +39,14 @@
                         <input id="task-form-id" type="hidden" value="0"/>
                         
                         <div class="form-group">
-                            <label for="task-form-title" class="col-sm-2 control-label">Title:</label>
+                            <label for="task-form-title" class="col-sm-2 control-label">Заголовок:</label>
                             <div class="col-sm-10">
                                 <input class="form-control" id="task-form-title" type="text"/>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="task-form-context" class="col-sm-2 control-label">Context:</label>
+                            <label for="task-form-context" class="col-sm-2 control-label">Описание:</label>
                             <div class="col-sm-10">
                                 <textarea class="form-control" id="task-form-context"></textarea>
                             </div>
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" onclick="TasksModal.apply();">Apply</button>
+                    <button type="button" class="btn btn-success" onclick="TasksModal.apply();">Выполнить</button>
                 </div>
             </div>
         </div>
